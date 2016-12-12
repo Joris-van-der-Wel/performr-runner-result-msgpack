@@ -1,0 +1,40 @@
+{
+  "name": "performr-runner-result-msgpack",
+  "version": "1.0.0",
+  "description": "Encode/decode performr-runner result json documents from/into a binary format using msgpack",
+  "main": "lib/index.js",
+  "scripts": {
+    "lint": "eslint lib test",
+    "pretest": "npm run lint",
+    "test": "mocha test",
+    "test-cov": "istanbul cover node_modules/mocha/bin/_mocha test"
+  },
+  "files": [
+    "bin",
+    "lib"
+  ],
+  "bin" : {
+      "runner-result-pack": "./bin/runner-result-pack.js",
+      "runner-result-unpack": "./bin/runner-result-unpack.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Joris-van-der-Wel/performr-runner-result-msgpack.git"
+  },
+  "author": "Joris van der Wel <joris@jorisvanderwel.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/Joris-van-der-Wel/performr-runner-result-msgpack",
+  "devDependencies": {
+    "babel-eslint": "^7.1.0",
+    "chai": "^3.5.0",
+    "eslint": "^3.9.1",
+    "eslint-plugin-import": "^2.2.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.2.0",
+    "mocha-sugar-free": "^1.3.1"
+  },
+  "dependencies": {
+    "jsonparse": "^1.2.0",
+    "msgpack5": "^3.4.1"
+  }
+}
