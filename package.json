@@ -1,6 +1,6 @@
 {
   "name": "performr-runner-result-msgpack",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Encode/decode performr-runner result json documents from/into a binary format using msgpack",
   "main": "lib/index.js",
   "scripts": {
