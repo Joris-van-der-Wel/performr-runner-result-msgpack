@@ -12,7 +12,8 @@
   },
   "files": [
     "bin",
-    "lib"
+    "lib",
+    "bundle.js"
   ],
   "bin": {
     "runner-result-pack": "./bin/runner-result-pack.js",
