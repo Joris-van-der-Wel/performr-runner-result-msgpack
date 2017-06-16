@@ -4,6 +4,7 @@
   "description": "Encode/decode performr-runner result json documents from/into a binary format using msgpack",
   "main": "lib/index.js",
   "scripts": {
+    "prepare": "browserify --standalone PerformrRunnerResultMsgpack lib/index.js > bundle.js",
     "lint": "eslint lib test",
     "pretest": "npm run lint",
     "test": "mocha test",
@@ -13,9 +14,9 @@
     "bin",
     "lib"
   ],
-  "bin" : {
-      "runner-result-pack": "./bin/runner-result-pack.js",
-      "runner-result-unpack": "./bin/runner-result-unpack.js"
+  "bin": {
+    "runner-result-pack": "./bin/runner-result-pack.js",
+    "runner-result-unpack": "./bin/runner-result-unpack.js"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,7 @@
   "homepage": "https://github.com/Joris-van-der-Wel/performr-runner-result-msgpack",
   "devDependencies": {
     "babel-eslint": "^7.1.0",
+    "browserify": "^14.4.0",
     "chai": "^3.5.0",
     "eslint": "^3.9.1",
     "eslint-plugin-import": "^2.2.0",

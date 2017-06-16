@@ -1,6 +1,4 @@
-/node_modules
 /.idea
 /PRIV
 npm-debug.log
 /coverage
-/bundle.js
