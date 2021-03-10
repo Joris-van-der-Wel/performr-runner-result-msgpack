@@ -38,6 +38,6 @@
   },
   "dependencies": {
     "jsonparse": "^1.2.0",
-    "msgpack5": "^3.4.1"
+    "msgpack5": "^3.6.1"
   }
 }
